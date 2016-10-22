@@ -16,15 +16,16 @@ import java.util.List;
  *
  * @author Geovani
  */
-public class BuscaDados {
+public class BuscaInformacoes {
 
-    public BuscaDados() {
+    public BuscaInformacoes() {
     }
 
     private static MinhaConexao conexao;
 
-    public List<Dados> busca() {
-        List<Dados> dados = new ArrayList();
+    public List<Informacoes> busca() {
+        List<Informacoes> dados = new ArrayList();
+        
         conexao = new MinhaConexao();
         conexao.getConnection();
 
@@ -37,7 +38,7 @@ public class BuscaDados {
             ResultSet rs = stm.executeQuery();
 
             while (rs.next()) {
-                Dados d = new Dados(rs.getInt("idoperacao"),
+                Informacoes d = new Informacoes(rs.getInt("idoperacao"),
                         rs.getInt("indicetransacao"),
                         rs.getString("operacao"),
                         rs.getString("itemdado"),

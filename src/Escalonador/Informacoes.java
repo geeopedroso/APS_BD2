@@ -9,14 +9,14 @@ package Escalonador;
  *
  * @author Geovani
  */
-public class Dados {
+public class Informacoes {
     private Integer idOperacao;
     private Integer indiceTransacao;
     private String operacao;
     private String itemDado;
     private String timesTemp;
 
-    public Dados(Integer idOperacao, Integer indiceTransacao, String operacao, String itemDado, String timesTemp) {
+    public Informacoes(Integer idOperacao, Integer indiceTransacao, String operacao, String itemDado, String timesTemp) {
         this.idOperacao = idOperacao;
         this.indiceTransacao = indiceTransacao;
         this.operacao = operacao;
