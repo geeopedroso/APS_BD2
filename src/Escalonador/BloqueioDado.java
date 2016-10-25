@@ -17,7 +17,7 @@ public class BloqueioDado {
         this.trasacao = trasacao;
         this.dado = dado;
     }
-
+    
     public Transacao getTrasacao() {
         return trasacao;
     }
@@ -32,6 +32,11 @@ public class BloqueioDado {
 
     public void setDado(Dado dado) {
         this.dado = dado;
+    }
+
+    @Override
+    public String toString() {
+        return "BloqueioDadoooo{" + "trasacao=" + trasacao.getIndice() + ", dado=" + dado.getItemDado() + '}';
     }
     
     

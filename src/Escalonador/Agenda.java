@@ -48,7 +48,7 @@ public class Agenda {
 
     @Override
     public String toString() {
-        return "Agenda{" + "transacao=" + transacao.getIndice() + ", dado=" + dado.getItemDado() + ", operacao=" + operacao.getTipo() + '}';
+        return "Agenda{" + "transacao=" + transacao.getIndice() + ", dado=" + dado.getItemDado() + ", operacao=" + operacao.getTipo() + '}' +"\n";
     }
     
     

@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class Transacao {
     
-    private int indice;
+    private Integer indice;
     private List<Operacao> operacoes;
 
     public Transacao(int indice) {
@@ -22,13 +22,15 @@ public class Transacao {
         operacoes = new ArrayList<>();
     }
 
-    public int getIndice() {
+    public Integer getIndice() {
         return indice;
     }
 
-    public void setIndice(int indice) {
+    public void setIndice(Integer indice) {
         this.indice = indice;
     }
+
+    
 
     public List<Operacao> getOperacoes() {
         return operacoes;
