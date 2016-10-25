@@ -5,7 +5,7 @@
  */
 package Escalonador;
 
-import Produtor.MinhaConexao;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -56,24 +56,6 @@ public class AgendaDao {
         }
 }
 
-        /* public static int pegarUltimoIndice() {
-        int ultimoIndice = 0;
-        minhaConexao = new MinhaConexao();
-        Connection conn = minhaConexao.getConnection();
-        String sql = "SELECT MAX(indiceTransacao) FROM schedule;";
-
-        try {
-            PreparedStatement stmt = conn.prepareStatement(sql);
-            ResultSet rs = stmt.executeQuery();
-            rs.next();
-            ultimoIndice = rs.getInt(1);
-        } catch (SQLException e) {
-            System.err.println("Erro na consulta ao ultimo Indice");
-            e.printStackTrace();
-        }
-        return ultimoIndice;
-    }
-    
-         */
+     
     
 
